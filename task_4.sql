@@ -10,5 +10,5 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS 
 WHERE 
-    TABLE_NAME = 'books';
-
+    TABLE_SCHEMA = 'alx_book_store'  -- Ensures we are querying from the correct database
+    AND TABLE_NAME = 'Books';        -- Ensures we are querying the 'Books' table
